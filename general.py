@@ -20,3 +20,14 @@ def write_file(path, data):
     file = open(path, 'w')
     file.write(data)
     file.close()
+
+# Add data onto an existing file
+def append_to_file(path, data):
+    with open(path, 'a') as file:
+        file.write(data + '\n')
+        file.close()
+
+# Delete the content of a file
+def delete_file_content(path):
+    with open(path, 'w'):
+        pass
